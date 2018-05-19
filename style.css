@@ -22,12 +22,13 @@ height:100%;
 }
 body
 {
-	height:100%;
+	height:auto;
     background-position:center;
 	background-repeat:no-repeat;
 	background-size:cover;
 	background-attachment:fixed;
 	margin:0px;
+	display:block;
 }
 .dd
 {
@@ -44,13 +45,14 @@ body
 	padding:0.5vh;
 	text-align:center;
 	font-size:5vh;
-	background-color:rgb(0,150,150);
+	background-color:hsl(180,35%,30%);
 	color:white;
 	border-bottom:1px solid black;
+	font-family:arial;
 }
 .dc
 {
-	background-color:rgb(100,100,100);
+	background-color:rgb(150,150,150);
     font-size:5vh;
     display:none;
 }
@@ -85,14 +87,15 @@ th
 {
 	padding:1vw;
 	font-size:2.5vh;
-	background-color:rgb(0,100,100);
+	background-color:hsl(180,35%,30%);
 	color:white;
 	overflow:hidden;
 }
 .thispage
 {
-	background-color:rgb(0,200,200);
+	background-color:hsl(180,35%,60%);
 	color:black;
+	font-family:arial;
 }
 @media only screen and (max-width:600px)
 {
@@ -118,7 +121,11 @@ th
 a:link, a:visited
 {
 	text-decoration:none;
+	display:block;
+	height:100%;
+	width:100%;
 	color:white;
+	font-family:arial;
 }
 a:hover
 {
@@ -128,6 +135,7 @@ a:active
 {
 	text-decoration:underline;
 }
+/*Content Styling*/
 @keyframes exp
 {
 	from
