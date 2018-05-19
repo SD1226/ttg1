@@ -52,7 +52,7 @@ body
 }
 .dc
 {
-	background-color:rgb(150,150,150);
+	background-color:hsla(0,0%,90%,0.7);
     font-size:5vh;
     display:none;
 }
@@ -68,7 +68,7 @@ body
 {
 	color:rgb(250,250,0);
 }
-ul
+.mob
 {
 	margin-top:0px;
 	list-style-type:none;
@@ -81,15 +81,20 @@ ul
 	top:0px;
 	left:0px;
 	margin:0px;
-	table-layout:fixed;
+    list-style-type:none;
+	padding:0px;
+	text-align:center;
+	width:100%;
+	overflow:hidden;
 }
-th
+.d
 {
-	padding:1vw;
+	width:25%;
+	height:7vh;
 	font-size:2.5vh;
 	background-color:hsl(180,35%,30%);
-	color:white;
-	overflow:hidden;
+	display:inline-block;
+	float:left;
 }
 .thispage
 {
@@ -111,13 +116,6 @@ th
 		display:none;
 	}
 }
-.cont
-{
-	text-align:center;
-    width:90vw;
-    margin:auto;
-    margin-top:10vh;
-}
 a:link, a:visited
 {
 	text-decoration:none;
@@ -126,9 +124,24 @@ a:link, a:visited
 	width:100%;
 	color:white;
 	font-family:arial;
+	padding:1vw;
 }
-a:hover
+.m > a:link, .m > a:visited
 {
+	color:hsl(280,40%,30%);
+}
+.thispage > a:link, .thispage > a:visited
+{
+	color:black;
+}
+.m > a:hover , .m > a:active
+{
+	color:yellow;
+	background-color:hsla(0,0%,60%,0.7);
+}
+.d > a:hover
+{
+	border:2px inset yellow;
 	color:yellow;
 }
 a:active
@@ -136,6 +149,13 @@ a:active
 	text-decoration:underline;
 }
 /*Content Styling*/
+.cont
+{
+	text-align:center;
+    width:90vw;
+    margin:auto;
+    margin-top:10vh;
+}
 @keyframes exp
 {
 	from
